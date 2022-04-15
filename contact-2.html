@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact-2.css">
+    <title>Contact-2</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="user signInBox">
+                <div class="imgBox">
+                    <img src="./images/key7.jpg">
+                </div>
+                <div class="formBox">
+                    <form action="#">
+                        <h2>Sign In</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <input type="submit" value="sign in">
+                        <p class="signUp">don't have an account <a href="#" onclick="toggleForm();">Sign up</a> </p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="user signUpBox">
+                <div class="formBox">
+                    <form action="#">
+                        <h2>Create an account</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Email address">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm password">
+                        <input type="submit" value="Sign Up">
+                        <p class="signIn">Already have an account <a href="#" onclick="toggleForm();">Sign in.</a> </p>
+                    </form>
+                </div>
+                <div class="imgBox">
+                    <img src="./images/key8.jpg">
+                </div>
+            </div> 
+
+        </div>
+    </section> 
+
+    <script>
+        function toggleForm(){
+            container = document.querySelector('.container');
+            container.classList.toggle('active');
+
+            section = document.querySelector('section');
+            section.classList.toggle('active');
+        }
+    </script>
+     
+</body>
+</html>
